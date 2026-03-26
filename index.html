@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>SƏ🔊A — Təlim Qeydiyyatı</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>SƏ🔊A — Təlim Qeydiyyatı 2025–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,600;0,700;1,600&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#1b3549;
@@ -12,231 +12,224 @@
   --teal2:#2a8aad;
   --pale:#eaf5f9;
   --pale2:#f4fafc;
-  --white:#ffffff;
+  --white:#fff;
   --text:#18303f;
   --muted:#527384;
   --border:#c0d9e6;
   --err:#c0392b;
-  --r:16px;
-  --shadow:0 4px 28px rgba(27,53,73,0.10);
+  --r:15px;
+  --sh:0 4px 28px rgba(27,53,73,0.11);
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 html{scroll-behavior:smooth;}
 body{
-  font-family:'Inter',sans-serif;
-  background:#e8f3f8;
+  font-family:'Noto Sans',sans-serif;
+  background:#e6f2f8;
   color:var(--text);
   min-height:100vh;
   overflow-x:hidden;
-  position:relative;
 }
 body::before{
-  content:'';
-  position:fixed;inset:0;
+  content:'';position:fixed;inset:0;
   background:
-    radial-gradient(ellipse 70% 55% at 5% 0%,rgba(31,110,140,0.18) 0%,transparent 65%),
-    radial-gradient(ellipse 55% 45% at 95% 100%,rgba(27,53,73,0.14) 0%,transparent 60%),
-    radial-gradient(ellipse 40% 40% at 50% 50%,rgba(31,110,140,0.06) 0%,transparent 70%);
-  animation:bgP 8s ease-in-out infinite alternate;
+    radial-gradient(ellipse 70% 55% at 5% 0%,rgba(31,110,140,.18) 0%,transparent 65%),
+    radial-gradient(ellipse 55% 45% at 95% 100%,rgba(27,53,73,.14) 0%,transparent 60%);
   pointer-events:none;z-index:0;
+  animation:bgP 9s ease-in-out infinite alternate;
 }
-@keyframes bgP{from{opacity:.8}to{opacity:1}}
-.blob{
-  position:fixed;border-radius:50%;pointer-events:none;z-index:0;
-  animation:fb linear infinite;opacity:.06;
-}
-.b1{width:420px;height:420px;background:var(--teal);top:-120px;right:-100px;animation-duration:18s;}
-.b2{width:280px;height:280px;background:var(--navy);bottom:-80px;left:-60px;animation-duration:22s;animation-delay:-8s;}
-.b3{width:180px;height:180px;background:var(--teal2);top:40%;left:70%;animation-duration:15s;animation-delay:-4s;}
+@keyframes bgP{from{opacity:.7}to{opacity:1}}
+
+.blob{position:fixed;border-radius:50%;pointer-events:none;z-index:0;animation:fb linear infinite;opacity:.055;}
+.b1{width:400px;height:400px;background:var(--teal);top:-110px;right:-90px;animation-duration:20s;}
+.b2{width:260px;height:260px;background:var(--navy);bottom:-70px;left:-55px;animation-duration:24s;animation-delay:-9s;}
+.b3{width:160px;height:160px;background:var(--teal2);top:45%;left:72%;animation-duration:16s;animation-delay:-5s;}
 @keyframes fb{
   0%{transform:translate(0,0) scale(1);}
-  33%{transform:translate(30px,-20px) scale(1.05);}
-  66%{transform:translate(-20px,30px) scale(.96);}
+  33%{transform:translate(28px,-18px) scale(1.05);}
+  66%{transform:translate(-18px,28px) scale(.95);}
   100%{transform:translate(0,0) scale(1);}
 }
+
 .page{
   position:relative;z-index:1;
-  max-width:640px;margin:0 auto;
-  padding:32px 16px 80px;
+  max-width:620px;margin:0 auto;
+  padding:28px 14px 80px;
 }
 
-/* HEADER */
+/* ── HEADER ── */
 .header{
-  text-align:center;margin-bottom:32px;
-  opacity:0;transform:translateY(-24px);
-  animation:sD .8s cubic-bezier(.22,1,.36,1) .1s forwards;
+  text-align:center;margin-bottom:28px;
+  opacity:0;transform:translateY(-22px);
+  animation:sD .75s cubic-bezier(.22,1,.36,1) .1s forwards;
 }
 @keyframes sD{to{opacity:1;transform:translateY(0)}}
 
-/* LOGO */
-.logo{display:inline-flex;flex-direction:column;align-items:center;gap:5px;margin-bottom:14px;}
-.logo-row{display:flex;align-items:center;line-height:1;}
+.logo{display:inline-flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:12px;}
+.logo-row{display:flex;align-items:center;}
 .ltr{
-  font-family:'Cormorant Garamond',serif;
-  font-size:74px;font-weight:700;
-  color:var(--navy);letter-spacing:-3px;line-height:.92;
+  font-family:'Noto Serif',serif;
+  font-size:70px;font-weight:700;
+  color:var(--navy);letter-spacing:-3px;line-height:.9;
 }
 .logo-spk{
-  display:inline-flex;align-items:center;justify-content:center;
-  margin:0 1px;position:relative;top:2px;
+  display:inline-flex;align-items:center;
+  margin:0 2px;position:relative;top:3px;
 }
 .logo-tag{
-  font-size:10px;font-weight:600;
+  font-family:'Noto Sans',sans-serif;
+  font-size:9.5px;font-weight:600;
   letter-spacing:5px;color:var(--teal);
-  text-transform:uppercase;margin-top:3px;
+  text-transform:uppercase;margin-top:4px;
 }
+
+.season-badge{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--navy),var(--teal));
+  color:#fff;font-size:11px;font-weight:600;
+  padding:4px 14px;border-radius:20px;
+  letter-spacing:1px;margin-bottom:12px;
+  box-shadow:0 3px 12px rgba(27,53,73,.25);
+}
+
 .h-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:25px;font-weight:600;
-  color:var(--navy);margin-bottom:6px;
+  font-family:'Noto Serif',serif;
+  font-size:23px;font-weight:700;
+  color:var(--navy);margin-bottom:5px;line-height:1.25;
 }
-.h-sub{font-size:13px;color:var(--muted);line-height:1.6;max-width:360px;margin:0 auto;}
+.h-sub{font-size:13px;color:var(--muted);line-height:1.6;max-width:340px;margin:0 auto;}
 
-/* WAVE */
-.wdiv{
-  display:flex;align-items:center;gap:10px;
-  margin:16px 0 24px;
-}
-.wdiv::before,.wdiv::after{
-  content:'';flex:1;height:1px;
-  background:linear-gradient(to right,transparent,var(--border),transparent);
-}
+/* wave */
+.wdiv{display:flex;align-items:center;gap:10px;margin:14px 0 22px;}
+.wdiv::before,.wdiv::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--border),transparent);}
 .wdots{display:flex;gap:5px;}
-.wd{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--teal);
-  animation:wp 2s ease-in-out infinite;
-}
-.wd:nth-child(2){animation-delay:.3s;}
-.wd:nth-child(3){animation-delay:.6s;}
-@keyframes wp{0%,100%{opacity:.4;transform:scale(1);}50%{opacity:1;transform:scale(1.35);}}
+.wd{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:wp 2s ease-in-out infinite;}
+.wd:nth-child(2){animation-delay:.3s;}.wd:nth-child(3){animation-delay:.6s;}
+@keyframes wp{0%,100%{opacity:.35;transform:scale(1);}50%{opacity:1;transform:scale(1.4);}}
 
-/* PROGRESS */
-.pbar{height:3px;background:var(--border);border-radius:2px;margin-bottom:20px;overflow:hidden;}
+/* progress */
+.pbar{height:3px;background:var(--border);border-radius:2px;margin-bottom:18px;overflow:hidden;}
 .pfill{height:100%;background:linear-gradient(to right,var(--teal),var(--navy));border-radius:2px;width:0%;transition:width .4s ease;}
 
-/* CARD */
+/* ── CARD ── */
 .card{
   background:var(--white);border-radius:var(--r);
-  box-shadow:var(--shadow);padding:24px 20px;
-  margin-bottom:14px;
-  border:1px solid rgba(192,217,230,0.4);
-  opacity:0;transform:translateY(26px);
-  animation:cIn .65s cubic-bezier(.22,1,.36,1) forwards;
+  box-shadow:var(--sh);padding:22px 18px;
+  margin-bottom:13px;
+  border:1px solid rgba(192,217,230,.45);
+  opacity:0;transform:translateY(24px);
+  animation:cIn .6s cubic-bezier(.22,1,.36,1) forwards;
   transition:box-shadow .3s;
 }
-.card:hover{box-shadow:0 8px 40px rgba(27,53,73,0.15);}
-.card:nth-child(1){animation-delay:.25s;}
-.card:nth-child(2){animation-delay:.38s;}
-.card:nth-child(3){animation-delay:.50s;}
-.card:nth-child(4){animation-delay:.62s;}
-.card:nth-child(5){animation-delay:.74s;}
+.card:hover{box-shadow:0 8px 38px rgba(27,53,73,.15);}
+.card:nth-child(1){animation-delay:.22s;}
+.card:nth-child(2){animation-delay:.34s;}
+.card:nth-child(3){animation-delay:.46s;}
+.card:nth-child(4){animation-delay:.58s;}
+.card:nth-child(5){animation-delay:.70s;}
 @keyframes cIn{to{opacity:1;transform:translateY(0)}}
 
-.shd{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+.shd{display:flex;align-items:center;gap:9px;margin-bottom:17px;}
 .snum{
-  width:27px;height:27px;min-width:27px;
+  width:26px;height:26px;min-width:26px;
   background:linear-gradient(135deg,var(--teal),var(--navy));
   color:#fff;border-radius:7px;
   font-size:12px;font-weight:600;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 3px 10px rgba(31,110,140,.3);
+  box-shadow:0 3px 10px rgba(31,110,140,.28);
 }
 .stit{
-  font-family:'Cormorant Garamond',serif;
-  font-size:17px;font-weight:600;color:var(--navy);flex:1;
+  font-family:'Noto Serif',serif;
+  font-size:16px;font-weight:600;color:var(--navy);flex:1;
 }
 .shd::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--border),transparent);}
 
-/* FIELDS */
-.grid{display:flex;flex-direction:column;gap:14px;}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-@media(max-width:420px){.grid2{grid-template-columns:1fr;}}
-.field{display:flex;flex-direction:column;gap:5px;}
+/* ── FIELDS ── */
+.grid{display:flex;flex-direction:column;gap:13px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+@media(max-width:400px){.grid2{grid-template-columns:1fr;}}
+
+.field{display:flex;flex-direction:column;gap:4px;}
 .field label{
-  font-size:11.5px;font-weight:600;
+  font-family:'Noto Sans',sans-serif;
+  font-size:11px;font-weight:600;
   color:var(--navy);letter-spacing:.5px;text-transform:uppercase;
 }
-.req{color:var(--teal);margin-left:2px;}
+.req{color:var(--teal);margin-left:1px;}
+
 .inp{
-  width:100%;padding:13px 14px;
+  width:100%;padding:12px 13px;
   border:1.5px solid var(--border);border-radius:10px;
-  font-family:'Inter',sans-serif;font-size:15px;
+  font-family:'Noto Sans',sans-serif;font-size:15px;
   color:var(--text);background:var(--pale2);
   transition:border .2s,box-shadow .2s,background .2s;
   outline:none;-webkit-appearance:none;appearance:none;
 }
-.inp:focus{border-color:var(--teal2);background:#fff;box-shadow:0 0 0 3px rgba(31,110,140,.12);}
+.inp:focus{border-color:var(--teal2);background:#fff;box-shadow:0 0 0 3px rgba(31,110,140,.11);}
 .inp::placeholder{color:#9dbdcc;}
+
 select.inp{
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='%231f6e8c' stroke-width='1.7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 13px center;
-  padding-right:36px;cursor:pointer;
+  background-repeat:no-repeat;background-position:right 12px center;
+  padding-right:34px;cursor:pointer;
 }
-textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
-.emsg{font-size:11.5px;color:var(--err);display:none;margin-top:2px;}
+textarea.inp{resize:vertical;min-height:84px;line-height:1.55;padding-top:11px;}
+
+.emsg{font-size:11px;color:var(--err);display:none;margin-top:2px;}
 .field.bad .inp{border-color:var(--err)!important;background:#fff8f7;}
 .field.bad .emsg{display:block;}
-.btxt{font-size:11.5px;color:var(--err);display:none;margin-top:4px;}
+.btxt{font-size:11px;color:var(--err);display:none;margin-top:4px;}
 
-/* PHONE */
+/* phone */
 .phr{display:flex;gap:8px;}
-.phr select.inp{width:100px;flex-shrink:0;padding-left:10px;}
+.phr select.inp{width:96px;flex-shrink:0;padding-left:10px;}
 .phr input.inp{flex:1;}
 
-/* PILLS */
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px;}
+/* pills */
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px;}
 .pill{position:relative;cursor:pointer;}
 .pill input{position:absolute;opacity:0;pointer-events:none;}
 .pill span{
   display:flex;align-items:center;gap:5px;
-  padding:10px 15px;
+  padding:9px 14px;
   border:1.5px solid var(--border);border-radius:50px;
+  font-family:'Noto Sans',sans-serif;
   font-size:13px;font-weight:500;color:var(--muted);
-  background:var(--pale2);
-  transition:all .2s;user-select:none;
+  background:var(--pale2);transition:all .2s;user-select:none;
 }
 .pill input:checked+span{
   background:var(--teal);border-color:var(--teal);color:#fff;
-  box-shadow:0 4px 14px rgba(31,110,140,.28);
-  transform:scale(1.04);
+  box-shadow:0 4px 13px rgba(31,110,140,.27);transform:scale(1.04);
 }
 .pill span:hover{border-color:var(--teal2);color:var(--teal);}
 
-/* TRAINING */
-.ttop{
-  display:flex;align-items:center;justify-content:space-between;
-  margin-bottom:13px;flex-wrap:wrap;gap:8px;
-}
+/* training */
+.ttop{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:7px;}
 .abtn{
   display:inline-flex;align-items:center;gap:6px;
-  padding:8px 14px;
+  padding:8px 13px;
   background:var(--navy);color:#fff;
   border:none;border-radius:8px;
-  font-family:'Inter',sans-serif;font-size:12px;font-weight:600;
+  font-family:'Noto Sans',sans-serif;font-size:12px;font-weight:600;
   cursor:pointer;transition:all .2s;
-  box-shadow:0 3px 12px rgba(27,53,73,.2);
+  box-shadow:0 3px 11px rgba(27,53,73,.2);
 }
 .abtn:hover{background:var(--teal);transform:translateY(-1px);}
 .abtn:active{transform:translateY(0);}
 
 .tlist{display:flex;flex-direction:column;gap:8px;}
 
-/* FIX: div kullanıyoruz label değil — checkbox conflict yok */
 .titem{
   display:flex;align-items:flex-start;gap:11px;
-  padding:12px 14px;
-  border:1.5px solid var(--border);border-radius:11px;
-  cursor:pointer;transition:all .22s;
+  padding:11px 13px;
+  border:1.5px solid var(--border);border-radius:10px;
+  cursor:pointer;transition:all .2s;
   background:var(--pale2);
   user-select:none;-webkit-user-select:none;
 }
+.titem:active{transform:scale(.99);}
 .titem:hover{border-color:var(--teal2);background:var(--pale);}
-.titem.on{
-  border-color:var(--teal);background:var(--pale);
-  box-shadow:0 2px 12px rgba(31,110,140,.14);
-}
+.titem.on{border-color:var(--teal);background:var(--pale);box-shadow:0 2px 11px rgba(31,110,140,.13);}
+
 .tck{
   width:20px;height:20px;min-width:20px;
   border:2px solid var(--border);border-radius:6px;
@@ -247,74 +240,70 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
 .tck svg{display:none;}
 .titem.on .tck svg{display:block;}
 .tinfo{flex:1;}
-.tnum{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:1.2px;display:block;margin-bottom:2px;}
-.tname{font-size:13.5px;font-weight:500;color:var(--text);line-height:1.4;}
+.tnum2{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:1.2px;display:block;margin-bottom:2px;}
+.tname{font-family:'Noto Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--text);line-height:1.4;}
 
-/* INFO */
 .ibox{
   display:flex;gap:9px;align-items:flex-start;
   background:linear-gradient(135deg,var(--pale),#ddf0f7);
-  border-left:3px solid var(--teal);
-  border-radius:9px;padding:11px 13px;
-  margin-top:12px;font-size:12px;color:var(--teal);line-height:1.5;
+  border-left:3px solid var(--teal);border-radius:9px;
+  padding:10px 12px;margin-top:11px;
+  font-family:'Noto Sans',sans-serif;font-size:12px;color:var(--teal);line-height:1.5;
 }
 
-/* SUBMIT */
-.swrap{text-align:center;padding-top:6px;}
+/* submit */
+.swrap{text-align:center;padding-top:4px;}
 .sbtn{
   display:inline-flex;align-items:center;gap:10px;
-  padding:15px 36px;
+  padding:15px 34px;
   background:linear-gradient(135deg,var(--navy) 0%,var(--teal) 100%);
   color:#fff;border:none;border-radius:50px;
-  font-family:'Cormorant Garamond',serif;
-  font-size:18px;font-weight:600;
-  cursor:pointer;letter-spacing:.4px;
-  box-shadow:0 6px 26px rgba(27,53,73,.32);
-  transition:all .28s;
+  font-family:'Noto Serif',serif;
+  font-size:17px;font-weight:700;
+  cursor:pointer;letter-spacing:.3px;
+  box-shadow:0 6px 26px rgba(27,53,73,.3);
+  transition:all .27s;
   width:100%;max-width:300px;justify-content:center;
 }
-.sbtn:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(27,53,73,.4);}
+.sbtn:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(27,53,73,.38);}
 .sbtn:active{transform:translateY(0);}
 
-/* SUCCESS */
-#suc{display:none;text-align:center;padding:56px 24px;}
-#suc.show{display:block;animation:cIn .6s ease forwards;}
+/* success */
+#suc{display:none;text-align:center;padding:52px 22px;}
+#suc.show{display:block;animation:cIn .55s ease forwards;}
 .sicon{
-  width:74px;height:74px;
+  width:72px;height:72px;
   background:linear-gradient(135deg,var(--teal),var(--navy));
   border-radius:50%;display:flex;align-items:center;justify-content:center;
-  margin:0 auto 20px;
-  box-shadow:0 8px 30px rgba(31,110,140,.35);
-  animation:pop .5s cubic-bezier(.34,1.56,.64,1) .2s both;
+  margin:0 auto 18px;
+  box-shadow:0 8px 28px rgba(31,110,140,.33);
+  animation:pop .5s cubic-bezier(.34,1.56,.64,1) .15s both;
 }
 @keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
-#suc h2{font-family:'Cormorant Garamond',serif;font-size:25px;color:var(--navy);margin-bottom:8px;}
-#suc p{color:var(--muted);font-size:14px;line-height:1.65;}
+#suc h2{font-family:'Noto Serif',serif;font-size:23px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+#suc p{font-family:'Noto Sans',sans-serif;color:var(--muted);font-size:14px;line-height:1.65;}
 
-/* LOADER */
+/* loader */
 .ldr{
   display:none;position:fixed;inset:0;
-  background:rgba(232,243,248,.88);
-  backdrop-filter:blur(5px);
-  z-index:200;
-  flex-direction:column;align-items:center;justify-content:center;gap:16px;
+  background:rgba(230,242,248,.87);backdrop-filter:blur(5px);
+  z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:15px;
 }
 .ldr.on{display:flex;}
 .spin{
-  width:42px;height:42px;
-  border:3px solid var(--border);
-  border-top-color:var(--teal);
+  width:40px;height:40px;
+  border:3px solid var(--border);border-top-color:var(--teal);
   border-radius:50%;animation:sp .75s linear infinite;
 }
 @keyframes sp{to{transform:rotate(360deg)}}
-.ldr p{font-size:13.5px;color:var(--navy);font-weight:500;}
+.ldr p{font-family:'Noto Sans',sans-serif;font-size:13px;color:var(--navy);font-weight:500;}
 
-.footer{text-align:center;margin-top:32px;font-size:11.5px;color:var(--muted);opacity:.6;}
+.footer{text-align:center;margin-top:28px;font-size:11px;color:var(--muted);opacity:.55;font-family:'Noto Sans',sans-serif;}
 
-@media(max-width:380px){
-  .ltr{font-size:58px;}
-  .card{padding:18px 14px;}
-  .sbtn{padding:14px 24px;font-size:16px;}
+@media(max-width:360px){
+  .ltr{font-size:54px;}
+  .card{padding:16px 12px;}
+  .sbtn{font-size:15px;}
 }
 </style>
 </head>
@@ -337,23 +326,24 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
       <div class="logo-row">
         <span class="ltr">S</span>
         <span class="ltr">ə</span>
-        <!-- SPEAKER LOGO — düzgün SVG, D hərfi problemi yoxdur -->
         <span class="logo-spk">
-          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Dalğa xətlər (arxada) -->
-            <path d="M52 23 Q61 36 52 49" stroke="#1b3549" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-opacity="0.4"/>
-            <path d="M46 28 Q53 36 46 44" stroke="#1b3549" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
-            <!-- Məgafonun gövdəsi — düzbucaqlı gövdə + üçbucaq -->
-            <rect x="10" y="26" width="14" height="20" rx="2.5" fill="#1b3549"/>
-            <path d="M24 20 L42 10 L42 62 L24 52 Z" fill="#1b3549"/>
+          <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M51 20 Q60 34 51 48" stroke="#1b3549" stroke-width="3" fill="none" stroke-linecap="round" stroke-opacity="0.4"/>
+            <path d="M45 26 Q52 34 45 42" stroke="#1b3549" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+            <rect x="9" y="25" width="13" height="18" rx="2.5" fill="#1b3549"/>
+            <path d="M22 19 L40 10 L40 58 L22 49 Z" fill="#1b3549"/>
           </svg>
         </span>
         <span class="ltr">A</span>
       </div>
       <span class="logo-tag">Əks Sədaya Bərabərdir!</span>
     </div>
+
+    <div class="season-badge">2025 – 2026 Mövsümü</div>
+
     <h1 class="h-title">Təlim Qeydiyyatı</h1>
-    <p class="h-sub">Formu dolduraraq iştirakınızı təsdiqləyin.<br>Ulduzlu sahələr vacibdir.</p>
+    <p class="h-sub">Formu dolduraraq iştirakınızı təsdiqləyin.<br>Ulduzlu (*) sahələr mütləq doldurulmalıdır.</p>
+
     <div class="wdiv">
       <div class="wdots">
         <div class="wd"></div><div class="wd"></div><div class="wd"></div>
@@ -361,35 +351,38 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
     </div>
   </div>
 
-  <!-- PROGRESS BAR -->
+  <!-- PROGRESS -->
   <div class="pbar"><div class="pfill" id="pf"></div></div>
 
   <form id="frm" novalidate>
 
-    <!-- 1: Şəxsi -->
+    <!-- CARD 1: Şəxsi -->
     <div class="card">
       <div class="shd">
         <div class="snum">1</div>
         <span class="stit">Şəxsi Məlumatlar</span>
       </div>
       <div class="grid">
+
         <div class="field" id="fn">
           <label>Ad və Soyad <span class="req">*</span></label>
-          <input class="inp" type="text" name="adSoyad" placeholder="Aynur Əliyeva" autocomplete="name">
+          <input class="inp" type="text" id="adSoyad" name="adSoyad" placeholder="Aynur Əliyeva" autocomplete="name">
           <span class="emsg">Ad soyad daxil edilməlidir</span>
         </div>
+
         <div class="grid2">
           <div class="field" id="fy">
             <label>Yaş <span class="req">*</span></label>
-            <input class="inp" type="number" name="yas" placeholder="25" min="14" max="99" inputmode="numeric">
+            <input class="inp" type="number" id="yas" name="yas" placeholder="25" min="14" max="99" inputmode="numeric">
             <span class="emsg">Düzgün yaş daxil edin</span>
           </div>
           <div class="field" id="fyer">
             <label>Yaşayış Yeri <span class="req">*</span></label>
-            <input class="inp" type="text" name="yer" placeholder="Bakı, Sumqayıt…">
+            <input class="inp" type="text" id="yasayisYeri" name="yasayisYeri" placeholder="Bakı, Sumqayıt…">
             <span class="emsg">Yer daxil edilməlidir</span>
           </div>
         </div>
+
         <div class="field" id="fst">
           <label>Ailə Vəziyyəti <span class="req">*</span></label>
           <div class="pills">
@@ -399,37 +392,41 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
           </div>
           <span class="btxt" id="st-e">Ailə vəziyyəti seçilməlidir</span>
         </div>
+
       </div>
     </div>
 
-    <!-- 2: Əlaqə -->
+    <!-- CARD 2: Əlaqə -->
     <div class="card">
       <div class="shd">
         <div class="snum">2</div>
         <span class="stit">Əlaqə Məlumatları</span>
       </div>
       <div class="grid">
+
         <div class="field" id="fem">
           <label>Gmail Hesabı</label>
-          <input class="inp" type="email" name="email" placeholder="nümunə@gmail.com" inputmode="email">
+          <input class="inp" type="email" id="email" name="email" placeholder="nümunə@gmail.com" inputmode="email" autocomplete="email">
           <span class="emsg">Düzgün e-mail daxil edin</span>
         </div>
+
         <div class="field" id="ftel">
           <label>Telefon Nömrəsi <span class="req">*</span></label>
           <div class="phr">
-            <select class="inp" name="prefix" id="pfx">
+            <select class="inp" id="pfx" name="pfx">
               <option value="050">050</option>
               <option value="055">055</option>
               <option value="051">051</option>
             </select>
-            <input class="inp" type="tel" name="telnum" id="tnum" placeholder="XXX XX XX" maxlength="9" inputmode="numeric">
+            <input class="inp" type="tel" id="tnum" name="tnum" placeholder="XXX XX XX" maxlength="9" inputmode="numeric">
           </div>
           <span class="emsg">Telefon nömrəsi daxil edilməlidir</span>
         </div>
+
       </div>
     </div>
 
-    <!-- 3: Format -->
+    <!-- CARD 3: İştirak -->
     <div class="card">
       <div class="shd">
         <div class="snum">3</div>
@@ -438,85 +435,81 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
       <div class="field" id="fft">
         <label>İştirak Növü <span class="req">*</span></label>
         <div class="pills">
-          <label class="pill"><input type="radio" name="format" value="Əyani (üzbəüz)"><span>🏛️ Əyani</span></label>
-          <label class="pill"><input type="radio" name="format" value="Onlayn"><span>💻 Onlayn</span></label>
-          <label class="pill"><input type="radio" name="format" value="Hər ikisi"><span>🔀 Hər ikisi</span></label>
+          <label class="pill"><input type="radio" name="istirakFormat" value="Əyani (üzbəüz)"><span>🏛️ Əyani</span></label>
+          <label class="pill"><input type="radio" name="istirakFormat" value="Onlayn"><span>💻 Onlayn</span></label>
+          <label class="pill"><input type="radio" name="istirakFormat" value="Hər ikisi"><span>🔀 Hər ikisi</span></label>
         </div>
         <span class="btxt" id="ft-e">İştirak növü seçilməlidir</span>
       </div>
     </div>
 
-    <!-- 4: Təlimlər -->
+    <!-- CARD 4: Təlimlər -->
     <div class="card">
       <div class="shd">
         <div class="snum">4</div>
         <span class="stit">Hansı Təlimdə İştirak Edəcəksiniz?</span>
       </div>
+
       <div class="ttop">
         <span style="font-size:12px;color:var(--muted);">Bir və ya bir neçə seçin</span>
         <button type="button" class="abtn" id="ab" onclick="toggleAll()">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5h10M6.5 1.5v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M6 1v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
           Hamısını Seç
         </button>
       </div>
-      <div class="tlist" id="tl">
-        <!-- DIV istifadə edirik, label deyil — checkbox seçimi düzgün işləyir -->
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Mən və Biz — Ailədə fərd olma" style="display:none">
+
+      <div class="tlist">
+        <div class="titem" onclick="pickT(this)" data-val="Mən və Biz — Ailədə fərd olma">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 1</span><span class="tname">Mən və Biz — Ailədə Fərd Olma</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 1</span><span class="tname">Mən və Biz — Ailədə Fərd Olma</span></div>
         </div>
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Sevginin 5 dili" style="display:none">
+        <div class="titem" onclick="pickT(this)" data-val="Sevginin 5 dili">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 2</span><span class="tname">Sevginin 5 Dili</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 2</span><span class="tname">Sevginin 5 Dili</span></div>
         </div>
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Bağlanmanın münasibətdəki rolu" style="display:none">
+        <div class="titem" onclick="pickT(this)" data-val="Bağlanmanın münasibətdəki rolu">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 3</span><span class="tname">Bağlanmanın Münasibətdəki Rolu</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 3</span><span class="tname">Bağlanmanın Münasibətdəki Rolu</span></div>
         </div>
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Səni eşidirəm — Ailə daxili dinləmə" style="display:none">
+        <div class="titem" onclick="pickT(this)" data-val="Səni eşidirəm — Ailə daxili dinləmə">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 4</span><span class="tname">Səni Eşidirəm — Ailə Daxili Dinləmə Təlimi</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 4</span><span class="tname">Səni Eşidirəm — Ailə Daxili Dinləmə Təlimi</span></div>
         </div>
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Sözsüz mesajlar — Ailə daxili anlama" style="display:none">
+        <div class="titem" onclick="pickT(this)" data-val="Sözsüz mesajlar — Ailə daxili anlama">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 5</span><span class="tname">Sözsüz Mesajlar — Ailə Daxili Anlama</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 5</span><span class="tname">Sözsüz Mesajlar — Ailə Daxili Anlama</span></div>
         </div>
-        <div class="titem" onclick="pickT(this)">
-          <input type="checkbox" name="t" value="Ailə büdcəsinin formalaşması" style="display:none">
+        <div class="titem" onclick="pickT(this)" data-val="Ailə büdcəsinin formalaşması">
           <div class="tck"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3L10 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="tinfo"><span class="tnum">Təlim 6</span><span class="tname">Ailə Büdcəsinin Formalaşması</span></div>
+          <div class="tinfo"><span class="tnum2">Təlim 6</span><span class="tname">Ailə Büdcəsinin Formalaşması</span></div>
         </div>
       </div>
+
       <span class="btxt" id="tel-e">Ən azı bir təlim seçilməlidir</span>
+
       <div class="ibox">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="7" stroke="#1f6e8c" stroke-width="1.5"/><path d="M8 7v4M8 5v.5" stroke="#1f6e8c" stroke-width="1.5" stroke-linecap="round"/></svg>
-        İstədiyiniz qədər təlim seçə bilərsiniz. Bütün təlimlər üçün "Hamısını Seç" düyməsini klikləyin.
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" style="flex-shrink:0;margin-top:1px"><circle cx="7.5" cy="7.5" r="6.5" stroke="#1f6e8c" stroke-width="1.4"/><path d="M7.5 6.5v4M7.5 4.5v.5" stroke="#1f6e8c" stroke-width="1.4" stroke-linecap="round"/></svg>
+        İstədiyiniz qədər təlim seçə bilərsiniz.
       </div>
     </div>
 
-    <!-- 5: Gözləntilər -->
+    <!-- CARD 5: Gözləntilər (vacib deyil) -->
     <div class="card">
       <div class="shd">
         <div class="snum">5</div>
         <span class="stit">Təlimdən Gözləntilər</span>
       </div>
       <div class="field" id="fgz">
-        <label>Təlimdən nə gözləyirsiniz? <span class="req">*</span></label>
-        <textarea class="inp" name="goz" id="goz" placeholder="Məsələn: ailə ünsiyyətini gücləndirmək, özünü daha yaxşı ifadə etməyi öyrənmək, münasibətlərdə anlayış qazanmaq, dinləmə bacarıqlarımı inkişaf etdirmək..." maxlength="600"></textarea>
-        <span class="emsg">Zəhmət olmasa gözləntilərinizi yazın (min. 10 hərf)</span>
-        <span id="gcnt" style="font-size:11px;color:var(--muted);text-align:right;display:block;margin-top:3px;">0 / 600</span>
+        <label>Nə gözləyirsiniz? <span style="color:var(--muted);font-weight:400;text-transform:none;font-size:10px;">(isteğe bağlı)</span></label>
+        <textarea class="inp" id="goz" name="gozlenti" placeholder="Ailə ünsiyyətini gücləndirmək, özünü daha yaxşı ifadə etməyi öyrənmək, münasibətlərdə anlayış qazanmaq…" maxlength="600"></textarea>
+        <span id="gcnt" style="font-size:10.5px;color:var(--muted);text-align:right;display:block;margin-top:3px;">0 / 600</span>
       </div>
     </div>
 
     <!-- SUBMIT -->
-    <div class="swrap" style="margin-top:6px;">
+    <div class="swrap" style="margin-top:4px;">
       <button type="submit" class="sbtn">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9l13-6.5-5.5 13-2-4.5L2 9z" fill="white"/></svg>
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M2 8.5l12.5-6-5 12-1.8-4.5L2 8.5z" fill="white"/></svg>
         Qeydiyyatı Tamamla
       </button>
     </div>
@@ -526,66 +519,72 @@ textarea.inp{resize:vertical;min-height:88px;line-height:1.55;padding-top:12px;}
   <!-- SUCCESS -->
   <div id="suc">
     <div class="sicon">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M6 17l7 7 15-14" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16l6.5 6.5 13.5-13" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <h2>Qeydiyyat Uğurla Tamamlandı! 🎉</h2>
     <p>Məlumatlarınız qeydə alındı.<br>Tezliklə sizinlə əlaqə saxlanılacaq.<br><br>Sizi görməyə şad olacağıq!</p>
   </div>
 
-  <div class="footer">© 2025 SƏ🔊A — Əks Sədaya Bərabərdir!</div>
+  <div class="footer">© 2025–2026 SƏ🔊A — Əks Sədaya Bərabərdir!</div>
 </div>
 
 <script>
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaGI7SineSd5jbd4R4LQpT4V7YwpfNVjXo_1mGhHAEnGyesVSIjFPrOK1iGXQP7bUO/exec';
+/* ══════════════════════════════════════
+   APPS SCRIPT URL — öz URL-inizi buraya yazın
+   ══════════════════════════════════════ */
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwkuD7aEn6dOUGLElqlbvpchVFN1teXttdXjgmglvBsjcP8QMzfYFW_0ojY5Psda7I/exec';
 
-/* Training toggle — DIV onclick, checkbox sinc */
+/* ── SELECTED TRAININGS (data-val atributundan oxuyuruq) ── */
+function getSelectedTrainings(){
+  const arr=[];
+  document.querySelectorAll('.titem.on').forEach(el=>{
+    arr.push(el.getAttribute('data-val'));
+  });
+  return arr;
+}
+
+/* ── TOGGLE SINGLE TRAINING ── */
 function pickT(el){
   el.classList.toggle('on');
-  const cb = el.querySelector('input[type="checkbox"]');
-  cb.checked = !cb.checked;
   upProg();
 }
 
-let allOn = false;
+/* ── TOGGLE ALL ── */
+let allOn=false;
 function toggleAll(){
-  allOn = !allOn;
+  allOn=!allOn;
   document.querySelectorAll('.titem').forEach(el=>{
-    const cb = el.querySelector('input');
-    if(allOn){el.classList.add('on');cb.checked=true;}
-    else{el.classList.remove('on');cb.checked=false;}
+    if(allOn) el.classList.add('on');
+    else el.classList.remove('on');
   });
-  const btn = document.getElementById('ab');
-  if(allOn){
-    btn.innerHTML='<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Ləğv Et';
-  } else {
-    btn.innerHTML='<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5h10M6.5 1.5v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Hamısını Seç';
-  }
+  const btn=document.getElementById('ab');
+  btn.innerHTML=allOn
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Ləğv Et'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M6 1v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Hamısını Seç';
   upProg();
 }
 
-/* Char count */
+/* ── CHAR COUNT ── */
 document.getElementById('goz').addEventListener('input',function(){
   document.getElementById('gcnt').textContent=this.value.length+' / 600';
-  upProg();
 });
 
-/* Phone - only numbers */
+/* ── PHONE NUMBERS ONLY ── */
 document.getElementById('tnum').addEventListener('input',function(){
   this.value=this.value.replace(/\D/g,'');
   upProg();
 });
 
-/* Progress */
+/* ── PROGRESS ── */
 function upProg(){
-  let f=0,t=7;
-  if(document.querySelector('[name="adSoyad"]').value.trim()) f++;
-  const yv=parseInt(document.querySelector('[name="yas"]').value);
+  let f=0,t=6; /* gözlənti vacib deyil, ona görə t=6 */
+  if(document.getElementById('adSoyad').value.trim()) f++;
+  const yv=parseInt(document.getElementById('yas').value);
   if(!isNaN(yv)&&yv>=14&&yv<=99) f++;
-  if(document.querySelector('[name="yer"]').value.trim()) f++;
+  if(document.getElementById('yasayisYeri').value.trim()) f++;
   if(document.querySelector('[name="status"]:checked')) f++;
   if(document.getElementById('tnum').value.trim().length>=7) f++;
-  if(document.querySelector('[name="format"]:checked')) f++;
-  if(document.querySelectorAll('[name="t"]:checked').length>0) f++;
+  if(document.querySelector('[name="istirakFormat"]:checked')) f++;
   document.getElementById('pf').style.width=(f/t*100)+'%';
 }
 document.querySelectorAll('.inp').forEach(el=>{
@@ -596,7 +595,7 @@ document.querySelectorAll('input[type="radio"]').forEach(el=>{
   el.addEventListener('change',upProg);
 });
 
-/* Validate */
+/* ── VALIDATION ── */
 function doVal(){
   let ok=true;
 
@@ -605,58 +604,68 @@ function doVal(){
     if(!cond){el.classList.add('bad');ok=false;}
     else el.classList.remove('bad');
   }
-  function st(id,cond){
+  function bt(id,cond){
     const el=document.getElementById(id);
     el.style.display=cond?'none':'block';
     if(!cond) ok=false;
   }
 
-  sf('fn', document.querySelector('[name="adSoyad"]').value.trim());
-  const yv=parseInt(document.querySelector('[name="yas"]').value);
-  sf('fy', !isNaN(yv)&&yv>=14&&yv<=99);
-  sf('fyer', document.querySelector('[name="yer"]').value.trim());
-  st('st-e', !!document.querySelector('[name="status"]:checked'));
+  sf('fn',  document.getElementById('adSoyad').value.trim().length>0);
 
-  const em=document.querySelector('[name="email"]').value.trim();
-  sf('fem', !em||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em));
+  const yv=parseInt(document.getElementById('yas').value);
+  sf('fy',  !isNaN(yv)&&yv>=14&&yv<=99);
+
+  sf('fyer', document.getElementById('yasayisYeri').value.trim().length>0);
+
+  bt('st-e', !!document.querySelector('[name="status"]:checked'));
+
+  const em=document.getElementById('email').value.trim();
+  sf('fem',  !em || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em));
 
   sf('ftel', document.getElementById('tnum').value.trim().length>=7);
-  st('ft-e', !!document.querySelector('[name="format"]:checked'));
-  st('tel-e', document.querySelectorAll('[name="t"]:checked').length>0);
-  sf('fgz', document.getElementById('goz').value.trim().length>=10);
+
+  bt('ft-e', !!document.querySelector('[name="istirakFormat"]:checked'));
+
+  bt('tel-e', getSelectedTrainings().length>0);
+
+  /* gözlənti vacib deyil — validation yoxdur */
 
   return ok;
 }
 
-/* Submit */
+/* ── SUBMIT ── */
 document.getElementById('frm').addEventListener('submit',async function(e){
   e.preventDefault();
   if(!doVal()){
-    const bad=document.querySelector('.bad,.btxt[style*="block"]');
+    /* ilk xətalı elementi tap */
+    const bad=document.querySelector('.bad, .btxt[style*="block"]');
     if(bad) bad.scrollIntoView({behavior:'smooth',block:'center'});
     return;
   }
 
-  const tels=Array.from(document.querySelectorAll('[name="t"]:checked')).map(c=>c.value);
+  const secilenTelimler = getSelectedTrainings();
+  const statusVal  = document.querySelector('[name="status"]:checked').value;
+  const formatVal  = document.querySelector('[name="istirakFormat"]:checked').value;
 
   const data={
-    adSoyad: document.querySelector('[name="adSoyad"]').value.trim(),
-    yas: document.querySelector('[name="yas"]').value.trim(),
-    yer: document.querySelector('[name="yer"]').value.trim(),
-    status: document.querySelector('[name="status"]:checked').value,
-    email: document.querySelector('[name="email"]').value.trim(),
-    telefon: document.getElementById('pfx').value+' '+document.getElementById('tnum').value,
-    format: document.querySelector('[name="format"]:checked').value,
-    telimler: tels.join(' | '),
-    gozlenti: document.getElementById('goz').value.trim(),
-    tarix: new Date().toLocaleString('az-AZ')
+    adSoyad:      document.getElementById('adSoyad').value.trim(),
+    yas:          document.getElementById('yas').value.trim(),
+    yasayisYeri:  document.getElementById('yasayisYeri').value.trim(),
+    aileVeziyyeti: statusVal,
+    email:        document.getElementById('email').value.trim(),
+    telefon:      document.getElementById('pfx').value + ' ' + document.getElementById('tnum').value,
+    istirakFormati: formatVal,
+    secilmisTelimler: secilenTelimler.join(' | '),
+    gozlenti:     document.getElementById('goz').value.trim(),
+    tarix:        new Date().toLocaleString('az-AZ')
   };
 
   document.getElementById('ldr').classList.add('on');
 
   try{
     await fetch(APPS_SCRIPT_URL,{
-      method:'POST',mode:'no-cors',
+      method:'POST',
+      mode:'no-cors',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(data)
     });
@@ -668,7 +677,7 @@ document.getElementById('frm').addEventListener('submit',async function(e){
     window.scrollTo({top:0,behavior:'smooth'});
   }catch(err){
     document.getElementById('ldr').classList.remove('on');
-    alert('Xəta baş verdi. Yenidən cəhd edin.');
+    alert('Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
   }
 });
 </script>
